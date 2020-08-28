@@ -67,8 +67,9 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:contentDescription="@string/identification_text"
             android:src="@mipmap/id"
-            android:contentDescription="@string/identification_text" />
+            android:tint="#FFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,51 +86,26 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/colorAccent"
-        android:orientation="vertical"
-        android:gravity="center" >
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:contentDescription="@string/temperature_capturing_text"
-            android:src="@mipmap/temperature" />
+            android:src="@mipmap/temperature"
+            android:tint="#FFFFFF" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/temperature_capturing_text"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="22sp"
-            android:text="@string/temperature_capturing_text"/>
+            android:textStyle="bold" />
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/section3"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
-        android:background="@color/colorPrimaryDark"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:src="@mipmap/mask"
-            android:contentDescription="@string/mask_verification_text" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fab_margin"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="22sp"
-            android:text="@string/mask_verification_text"/>
 
     </LinearLayout>
 
@@ -138,16 +114,15 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="@string/footer_text"/>
-
+            app:srcCompat="@mipmap/tjoptjop_logo_white" />
     </LinearLayout>
 
 </LinearLayout>

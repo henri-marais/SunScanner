@@ -11,7 +11,7 @@
     <string name="powered_by">Powered by:</string>
     <string name="nwu_logo">nwu logo</string>
 
-    <string name="footer_text">HEALTH SCREENING</string>
+    <string name="footer_text">COVID-19 FOOD AID</string>
     <string name="identification_text">IDENTIFICATION</string>
     <string name="identification_type_ttpass">Tjop Tjop pass</string>
     <string name="identification_type_manual">Manual Entry</string>
@@ -20,8 +20,8 @@
     <string name="wellness_healthy">Healthy</string>
     <string name="wellness_ill">Feeling Ill</string>
 
-    <string name="temperature_capturing_text">TEMPERATURE CAPTURING</string>
-    <string name="mask_verification_text">MASK VERIFICATION</string>
+    <string name="temperature_capturing_text">BAG IDENTIFICATION</string>
+    <string name="mask_verification_text">BAG IDENTIFICATION</string>
     <string name="qr_sample">QR Sample</string>
     <string name="placeholder_text">000000 0000 000\nJOHN DOE\nGRADE 12A\nEMERGENCY CONTACT\n0182994058</string>
     <string name="user_details">%s\n%s\n%s\nEMERGENCY CONTACT\n%s</string>

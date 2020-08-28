@@ -38,12 +38,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="393dp"
             android:layout_height="match_parent"
             android:layout_gravity="center|center_horizontal|center_vertical">
 
@@ -54,6 +54,7 @@
                 android:layout_marginTop="1dp"
                 android:contentDescription="@string/temperature_capturing_text"
                 android:src="@mipmap/temperature"
+                android:tint="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +63,7 @@
                 android:id="@+id/capturedTemp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
+                android:layout_marginTop="4dp"
                 android:background="@null"
                 android:editable="true"
                 android:ems="10"
@@ -73,6 +74,7 @@
                 android:textSize="36sp"
                 android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -85,13 +87,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center|center_vertical"
         android:orientation="horizontal">
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="360dp"
             android:layout_gravity="center|clip_vertical|center_horizontal"
             android:clipToPadding="true">
 
@@ -234,24 +236,6 @@
 
             </TableRow>
         </TableLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/section4"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/footer_text"
-            android:textColor="@color/white" />
-
-
     </LinearLayout>
 
 </LinearLayout>

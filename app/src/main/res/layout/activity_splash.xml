@@ -20,11 +20,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="401dp"
+            android:layout_height="369dp"
             android:contentDescription="@string/tjoptjop_logo"
             android:src="@mipmap/tjoptjop_business_logo"
-            android:tint="@color/white" />
+            app:srcCompat="@mipmap/tjoptjop_logo_white" />
 
         <TextView
             android:id="@+id/app_version"

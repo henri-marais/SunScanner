@@ -52,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="120dp"
             android:layout_marginBottom="15dp"
-            android:src="@mipmap/inbound"/>
+            android:src="@mipmap/inbound"
+            android:tint="#FFFFFF" />
 
 
         <TextView
@@ -80,7 +81,8 @@
             android:layout_height="120dp"
             android:layout_marginLeft="15dp"
             android:contentDescription="@string/temperature_capturing_text"
-            android:src="@mipmap/outbound"/>
+            android:src="@mipmap/outbound"
+            android:tint="@color/colorPrimary" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -91,23 +93,6 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/section4"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="@string/footer_text"/>
 
     </LinearLayout>
 

@@ -12,23 +12,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:src="@mipmap/id"
-            android:contentDescription="@string/identification_text" />
+            android:contentDescription="@string/identification_text"
+            android:src="@mipmap/id" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="@string/identification_text"
             android:textColor="@color/white"
-            android:textStyle="bold"
             android:textSize="22sp"
-            android:text="@string/identification_text"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

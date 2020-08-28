@@ -38,12 +38,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="335dp"
             android:layout_height="match_parent"
             android:layout_gravity="center|center_horizontal|center_vertical"
             android:visibility="visible">
@@ -55,6 +55,7 @@
                 android:layout_marginTop="10dp"
                 android:contentDescription="@string/temperature_capturing_text"
                 android:src="@mipmap/temperature"
+                android:tint="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -75,6 +76,7 @@
                 android:textSize="35sp"
                 android:visibility="invisible"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -108,7 +110,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center|center_horizontal|center_vertical">
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:background="@color/colorPrimaryDark">
 
             <TextView
                 android:id="@+id/tInstruction"
@@ -184,17 +187,15 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorAccent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/footer_text"
-            android:textColor="@color/white" />
-
-
+            app:srcCompat="@mipmap/tjoptjop_logo_white" />
     </LinearLayout>
 
 </LinearLayout>
