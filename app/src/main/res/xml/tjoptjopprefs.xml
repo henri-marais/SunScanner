@@ -1,0 +1,82 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="General Preferences">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="auto_temp"
+            app:title="@string/temp_type" />
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="wellness_check"
+            app:title="@string/wellness_check" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="sync_mode_DR"
+            app:title="@string/sync_mode"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/id_title" app:key="IDSettings">
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="id_qrcode"
+            app:title="@string/id_qrcode_type" />
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="id_barcode"
+            app:title="@string/id_barcode_type" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="id_rsa_valid"
+            app:summaryOff="@string/id_rsaid_valid_off"
+            app:summaryOn="@string/id_rsaid_valid_on"
+            app:title="@string/id_rsaid_validity" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/Auto_Capture_header" app:key="TempSettings">
+        <EditTextPreference
+            app:defaultValue="5"
+            app:key="box_height"
+            app:title="@string/capture_box_height"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="7"
+            app:key="box_width"
+            app:title="@string/capture_box_width"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="33"
+            app:key="box_base"
+            app:title="@string/capture_box_scale"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="10"
+            app:key="box_zoom"
+            app:title="@string/capture_box_zoom"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="6"
+            app:key="backlight_intensity"
+            app:title="@string/backlight_intensity"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:defaultValue="9"
+            app:key="backlight_evenness"
+            app:title="@string/backlight_evenness"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:key="training_mode"
+            app:title="@string/calibration_mode"
+            app:defaultValue="false"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

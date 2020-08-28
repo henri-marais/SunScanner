@@ -1,0 +1,3 @@
+rootProject.name='Digitized Health Screening'
+include ':app'
+include ':openCVLibrary3410'

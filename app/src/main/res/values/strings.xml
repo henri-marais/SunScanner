@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">TjopTjop Business</string>
+    <string name="domain_name">https://www.tjop-tjop.com</string>
+    <string name="endpoint_appVersion">/app/versionCheck.php</string>
+    <string name="endpoint_synchronisation">/app/syncv4.php</string>
+    <string name="endpoint_questionUpdate">/app/getQuestions.php</string>
+
+    <string name="apk_download_path">/download/</string>
+    <string name="customerCode">CUSTOMER CODE</string>
+    <string name="activation_token">ACTIVATION TOKEN</string>
+    <string name="powered_by">Powered by:</string>
+    <string name="nwu_logo">nwu logo</string>
+
+    <string name="footer_text">HEALTH SCREENING</string>
+    <string name="identification_text">IDENTIFICATION</string>
+    <string name="identification_type_ttpass">Tjop Tjop pass</string>
+    <string name="identification_type_manual">Manual Entry</string>
+    <string name="direction_inbound">Inbound</string>
+    <string name="direction_outbound">Outbound</string>
+    <string name="wellness_healthy">Healthy</string>
+    <string name="wellness_ill">Feeling Ill</string>
+
+    <string name="temperature_capturing_text">TEMPERATURE CAPTURING</string>
+    <string name="mask_verification_text">MASK VERIFICATION</string>
+    <string name="qr_sample">QR Sample</string>
+    <string name="placeholder_text">000000 0000 000\nJOHN DOE\nGRADE 12A\nEMERGENCY CONTACT\n0182994058</string>
+    <string name="user_details">%s\n%s\n%s\nEMERGENCY CONTACT\n%s</string>
+    <string name="barcode_details">%s\n%s\n%s</string>
+    <string name="ttpass_details">%s\n%s\n</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="position_temperature_value_within_frame">POSITION TEMPERATURE VALUE WITHIN FRAME</string>
+    <string name="confirm_temperature">CONFIRM TEMPERATURE</string>
+    <string name="the_person_is_wearing_a_mask">THE PERSON IS\nWEARING A MASK</string>
+    <string name="i_have_issued_the_person_with_a_mask">I HAVE ISSUED THE\nPERSON WITH A MASK</string>
+
+    <string name="button_ok">OK</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_update">Update</string>
+    <string name="button_later">Later</string>
+    <string name="login">LOGIN</string>
+    <string name="database_sync_button">database sync button</string>
+    <string name="sign_out_button">sign out button</string>
+    <string name="tjoptjop_logo">tjoptjop logo</string>
+    <string name="q_a_text"><![CDATA[Q & A]]></string>
+    <string name="question_1">1. Have you travelled to a high risk area in the last 14 days?</string>
+    <string name="question_2">2. Have you recently been in close contact to someone infected with the virus?</string>
+    <string name="question_3">3. Have you recently been in contact to someone probable to be infected with the virus?</string>
+    <string name="question_4">4. Have you attended a health facility where patients that have the virus are treated in the last 14 days?</string>
+    <string name="question_5">5. Have you been admitted with severe pneumonia?</string>
+    <string name="question_6">6. Do you suffer from any chronic disease?</string>
+    <string name="question_7">7. Do you have any of the following symptoms?</string>
+    <string name="cough">Cough</string>
+    <string name="sore_throat">Sore Throat</string>
+    <string name="shortness_of_breath">Shortness of Breath</string>
+    <string name="fatigue">Fatigue</string>
+    <string name="myalgia_body_pains">Myalgia/ Body Pains</string>
+    <string name="submit">Submit</string>
+
+    <string name="OutputImageDirectory">Screener</string>
+    <string name="please_specify_chronic_diseases">Please specify chronic diseases</string>
+    <string name="title_activity_temp_capture_settings">Capturing Preferences</string>
+
+    <!-- Preference Titles -->
+    <string name="Auto_Capture_header">Automatic Capturing Settings</string>
+    <string name="sync_header">Data Synchronisation</string>
+
+    <!-- Messages Preferences -->
+    <string name="temp_type">Automatic Temperature Capturing</string>
+    <string name="wellness_check">General Wellness Check</string>
+    <string name="sync_mode">Perform disaster recovery Sync?</string>
+    <string name="capture_box_width">Width of the capture box</string>
+    <string name="capture_box_height">Height of the capture box</string>
+    <string name="capture_box_scale">Overall size of the capture box</string>
+    <string name="capture_box_zoom">Digital image enlargement</string>
+    <string name="backlight_intensity">Backlight intensity</string>
+    <string name="backlight_evenness">Backlight variation</string>
+    <string name="calibration_mode">Calibration mode</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Identification Preferences -->
+    <string name="id_title">Identification Settings</string>
+    <string name="id_type">Select identification type</string>
+    <string name="id_qrcode_type">Custom QR codes</string>
+    <string name="id_barcode_type">Barcodes</string>
+    <string name="id_rsaid_validity">Check validity of barcode IDs</string>
+    <string name="id_rsaid_valid_on">Only valid RSA ID numbers will be accepted</string>
+    <string name="id_rsaid_valid_off">Any valid barcode will be accepted</string>
+</resources>
