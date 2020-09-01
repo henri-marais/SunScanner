@@ -31,7 +31,7 @@
                 android:contentDescription="@string/database_sync_button" />
 
             <ImageButton
-                android:id="@+id/signOutBtn"
+                android:id="@+id/BtnSettings"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:layout_marginEnd="100dp"
-                android:layout_toStartOf="@+id/signOutBtn"
+                android:layout_toStartOf="@+id/BtnSettings"
                 android:layout_toEndOf="@+id/syncButton"
                 android:background="@color/colorPrimaryDark"
                 android:text="SIGN OUT"

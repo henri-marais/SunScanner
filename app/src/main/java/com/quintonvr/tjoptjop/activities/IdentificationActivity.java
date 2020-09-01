@@ -86,47 +86,47 @@ public class IdentificationActivity extends AppCompatActivity {
         String finalCity = city;
         String finalDir = mDir;
         mConfirm.setOnClickListener(v -> {
-            if (finalDir.equals("IN")) {
-                //Inbound requires a temperature scan
-                Intent TempScan;
-                SharedPreferences userPrefs = this.getSharedPreferences("tjoptjopprefs",MODE_PRIVATE);
-                Boolean automatic_temp_on = userPrefs.getBoolean("auto_temp",false);
-                if (automatic_temp_on){
-                    TempScan = new Intent(this, TempScanningActivity.class);
-                }else {
-                    TempScan = new Intent(this, ManualEntryActivity.class);
-                }
-                TempScan.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
-                TempScan.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
-                TempScan.putExtra(INTENT_EXTRA_DIRECTION,finalDir);
-                if (finalAddress != null) {
-                    TempScan.putExtra(INTENT_EXTRA_NAME, finalName);
-                    TempScan.putExtra(INTENT_EXTRA_EMERGENCY_CONTACT, finalPhone);
-                    TempScan.putExtra(INTENT_EXTRA_ADDRESS, finalAddress);
-                    TempScan.putExtra(INTENT_EXTRA_CITY, finalCity);
-                }
-                startActivity(TempScan);
-            }else{
-                //Outbound leads directly to questions
+//            if (finalDir.equals("IN")) {
+//                //Inbound requires a temperature scan
+//                Intent TempScan;
+//                SharedPreferences userPrefs = this.getSharedPreferences("tjoptjopprefs",MODE_PRIVATE);
+//                Boolean automatic_temp_on = userPrefs.getBoolean("auto_temp",false);
+//                if (automatic_temp_on){
+//                    TempScan = new Intent(this, TempScanningActivity.class);
+//                }else {
+//                    TempScan = new Intent(this, ManualEntryActivity.class);
+//                }
+//                TempScan.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
+//                TempScan.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
+//                TempScan.putExtra(INTENT_EXTRA_DIRECTION,finalDir);
+//                if (finalAddress != null) {
+//                    TempScan.putExtra(INTENT_EXTRA_NAME, finalName);
+//                    TempScan.putExtra(INTENT_EXTRA_EMERGENCY_CONTACT, finalPhone);
+//                    TempScan.putExtra(INTENT_EXTRA_ADDRESS, finalAddress);
+//                    TempScan.putExtra(INTENT_EXTRA_CITY, finalCity);
+//                }
+//                startActivity(TempScan);
+//            }else{
+//                //Outbound leads directly to questions
                 Intent intentQuestions;
-                SharedPreferences userPrefs = this.getSharedPreferences("tjoptjopprefs",MODE_PRIVATE);
-                Boolean wellness_check = userPrefs.getBoolean("wellness_check",false);
-                if (wellness_check){
-                    intentQuestions = new Intent(this, WellnessCheckActivity.class);
-                }else {
+//                SharedPreferences userPrefs = this.getSharedPreferences("tjoptjopprefs",MODE_PRIVATE);
+//                Boolean wellness_check = userPrefs.getBoolean("wellness_check",false);
+//                if (wellness_check){
+//                    intentQuestions = new Intent(this, WellnessCheckActivity.class);
+//                }else {
                     intentQuestions = new Intent(this, QuestionsActivity.class);
-                }
-                intentQuestions.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
-                intentQuestions.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
-                intentQuestions.putExtra(INTENT_EXTRA_DIRECTION,finalDir);
-                if (finalAddress != null) {
-                    intentQuestions.putExtra(INTENT_EXTRA_NAME, finalName);
-                    intentQuestions.putExtra(INTENT_EXTRA_EMERGENCY_CONTACT, finalPhone);
-                    intentQuestions.putExtra(INTENT_EXTRA_ADDRESS, finalAddress);
-                    intentQuestions.putExtra(INTENT_EXTRA_CITY, finalCity);
-                }
+//                }
+//                intentQuestions.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
+//                intentQuestions.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
+//                intentQuestions.putExtra(INTENT_EXTRA_DIRECTION,finalDir);
+//                if (finalAddress != null) {
+//                    intentQuestions.putExtra(INTENT_EXTRA_NAME, finalName);
+//                    intentQuestions.putExtra(INTENT_EXTRA_EMERGENCY_CONTACT, finalPhone);
+//                    intentQuestions.putExtra(INTENT_EXTRA_ADDRESS, finalAddress);
+//                    intentQuestions.putExtra(INTENT_EXTRA_CITY, finalCity);
+//                }
                 startActivity(intentQuestions);
-            }
+//            }
         });
     }
 }

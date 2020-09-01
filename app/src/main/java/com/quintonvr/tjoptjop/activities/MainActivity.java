@@ -14,7 +14,6 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -23,9 +22,7 @@ import android.widget.Toast;
 import com.quintonvr.tjoptjop.BuildConfig;
 import com.quintonvr.tjoptjop.R;
 import com.quintonvr.tjoptjop.helpers.DatabaseHelper;
-import com.quintonvr.tjoptjop.network.AppVersionTask;
 import com.quintonvr.tjoptjop.network.CheckNetwork;
-import com.quintonvr.tjoptjop.network.DatabaseSyncTask;
 import com.quintonvr.tjoptjop.network.QuestionUpdateTask;
 import com.quintonvr.tjoptjop.network.SignOutTask;
 
@@ -38,7 +35,6 @@ import java.util.Random;
 
 import static com.quintonvr.tjoptjop.helpers.Utils.PREFS_ACTIVATION_TOKEN;
 import static com.quintonvr.tjoptjop.helpers.Utils.PREFS_CUSTOMER_CODE;
-import static com.quintonvr.tjoptjop.helpers.Utils.PREFS_QUESTIONS;
 import static com.quintonvr.tjoptjop.helpers.Utils.PREFS_QUESTIONS_ID;
 import static com.quintonvr.tjoptjop.helpers.Utils.VITAL_PREFS;
 
@@ -47,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     private static final int PERMISSIONS_REQUEST = 100;
     private String TAG = "MainActivity";
 
-    private LinearLayout mIDSection, mTemperatureSection, mMaskSection;
-    private ImageButton mSyncBtn, mSignOutBtn;
+    private LinearLayout mIDSection, mBagIDSection, mMaskSection;
+    private ImageButton mSyncBtn, mBtnSettings;
     private Button logOutBtn;
 
     /*FOR Debugging Only*/
@@ -60,10 +56,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mSyncBtn = findViewById(R.id.syncButton);
-        mSignOutBtn = findViewById(R.id.signOutBtn);
+        mBtnSettings = findViewById(R.id.BtnSettings);
         logOutBtn = findViewById(R.id.logOutbtn);
         mIDSection = findViewById(R.id.section1);
-        mTemperatureSection = findViewById(R.id.section2);
+        mBagIDSection = findViewById(R.id.section2);
         mMaskSection = findViewById(R.id.section3);
 
         requestPermissions();
@@ -143,26 +139,20 @@ public class MainActivity extends AppCompatActivity {
                     .show();
         });
 
-        mSignOutBtn.setOnClickListener(v->{
+        mBtnSettings.setOnClickListener(v->{
             Intent intent = new Intent(this, TempCaptureSettingsActivity.class);
             startActivity(intent);
         });
 
         mIDSection.setOnClickListener(v -> {
-            Intent intent = new Intent(this, DirectionActivity.class);
+            Intent intent = new Intent(this, QrScannerActivity.class);
             startActivity(intent);
         });
 
-        mTemperatureSection.setOnClickListener(v -> {
-            Intent intent = new Intent(this, TempScanningActivity.class);
-            startActivity(intent);
-        });
-
-        mMaskSection.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MaskActivity.class);
-            startActivity(intent);
-        });
-
+//        mBagIDSection.setOnClickListener(v -> {
+//            Intent intent = new Intent(this, TempScanningActivity.class);
+//            startActivity(intent);
+//        });
     }
 
     @Override

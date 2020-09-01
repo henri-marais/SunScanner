@@ -23,28 +23,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".activities.SyncActivity"></activity>
-        <activity android:name=".activities.WellnessCheckActivity" />
-        <activity android:name=".activities.DirectionActivity" />
-        <activity android:name=".activities.PassGenerationActivity" />
-        <activity android:name=".activities.ManualEntryActivity" />
-        <activity
-            android:name=".activities.TempCaptureSettingsActivity"
-            android:label="@string/title_activity_temp_capture_settings" />
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.IDtypeActivity" />
         <activity android:name=".activities.QuestionsActivity" />
         <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.MaskActivity" />
         <activity android:name=".activities.IdentificationActivity" />
         <activity android:name=".activities.QrScannerActivity" />
         <activity android:name=".activities.MainActivity" /> <!-- <activity android:name=".activities.CameraActivity"> -->
-        <activity android:name=".activities.TempScanningActivity" />
     </application>
 
 </manifest>

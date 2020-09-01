@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TjopTjop Business</string>
+    <string name="app_name">SunScanner</string>
     <string name="domain_name">https://www.tjop-tjop.com</string>
     <string name="endpoint_appVersion">/app/versionCheck.php</string>
     <string name="endpoint_synchronisation">/app/syncv4.php</string>
