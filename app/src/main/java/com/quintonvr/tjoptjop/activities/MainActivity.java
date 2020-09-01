@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         requestPermissions();
 
+        SharedPreferences prefs = getSharedPreferences(VITAL_PREFS, Context.MODE_PRIVATE);
+        String institution = prefs.getString(PREFS_CUSTOMER_CODE, "");
+        logOutBtn.setText("SIGN OUT\n"+institution);
+
         mSyncBtn.setOnClickListener(v -> {
             new AlertDialog.Builder(this)
                     .setTitle("Database Sync")

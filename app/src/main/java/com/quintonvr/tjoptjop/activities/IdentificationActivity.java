@@ -116,8 +116,8 @@ public class IdentificationActivity extends AppCompatActivity {
 //                }else {
                     intentQuestions = new Intent(this, QuestionsActivity.class);
 //                }
-//                intentQuestions.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
-//                intentQuestions.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
+                intentQuestions.putExtra(INTENT_EXTRA_ID_NUMBER, finalUserID);
+                intentQuestions.putExtra(INTENT_EXTRA_IDTYPE, finalIDtype);
 //                intentQuestions.putExtra(INTENT_EXTRA_DIRECTION,finalDir);
 //                if (finalAddress != null) {
 //                    intentQuestions.putExtra(INTENT_EXTRA_NAME, finalName);
