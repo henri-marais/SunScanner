@@ -152,11 +152,6 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, QrScannerActivity.class);
             startActivity(intent);
         });
-
-//        mBagIDSection.setOnClickListener(v -> {
-//            Intent intent = new Intent(this, TempScanningActivity.class);
-//            startActivity(intent);
-//        });
     }
 
     @Override
@@ -164,7 +159,9 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         SharedPreferences prefs = getApplicationContext().getSharedPreferences(VITAL_PREFS, Context.MODE_PRIVATE);
         int questionID = prefs.getInt(PREFS_QUESTIONS_ID,-1);
-        new QuestionUpdateTask(this).execute();
+        if (CheckNetwork.isInternetAvailable(this)) {
+            new QuestionUpdateTask(this).execute();
+        }
     }
 
     @Override
